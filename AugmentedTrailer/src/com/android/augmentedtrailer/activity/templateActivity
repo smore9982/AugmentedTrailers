@@ -32,7 +32,7 @@ public class SplashScreenActivity extends Activity {
 		
 	@Override
 	protected void onStop(){
-
+		super.onStop();
 	}
 		
 	@Override

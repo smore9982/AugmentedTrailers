@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone" >    
+
+    <Button 
+        android:id="@+id/toggleButtonBar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onToggleButtonBar"
+        android:text="Menu"/>
+    
+    <LinearLayout
+        android:id="@+id/buttonBar"
+        style="@android:style/ButtonBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:background="#CC555555"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/capShieldButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:onClick="onShowCapShield"
+            android:text="Cap Shield" />
+        
+       <Button
+            android:id="@+id/zeldaShieldButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:onClick="onShowZeldaShield"
+            android:text="Zelda Shield" />
+       
+       <Button
+            android:id="@+id/policeShieldButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:onClick="onShowRiotShield"
+            android:text="Police Shield" />
+       
+        <Button
+            android:id="@+id/ironManswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:onClick="onToggleIronManSwitch"
+            android:text="Ironman Toggle" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl riot
+Ka 0.000000 0.000000 0.000000
+Kd 0.811765 0.811765 0.815686
+Ks 0.330000 0.330000 0.330000
+map_Kd 4ff09f24a9c03fb9d10296ff9675b39d.jpg
+
+newmtl Translucent_Glass_Gray
+Ka 0.000000 0.000000 0.000000
+Kd 0.619608 0.619608 0.619608
+Ks 0.330000 0.330000 0.330000
+d 0.410000
+

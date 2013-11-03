@@ -1,5 +1,6 @@
 package com.android.augmentedtrailer.activity;
 
+import android.app.Activity;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
@@ -17,7 +18,7 @@ import android.widget.ListView;
 import com.android.augmentedtrailer.R;
 import com.metaio.sdk.ARViewActivity;
 
-public abstract class BaseActivity extends ARViewActivity {
+public abstract class BaseActivity extends Activity {
 	private DrawerLayout mDrawerLayout;
 	private String[] mActitvityTitles;
 	private ListView mDrawerList;
@@ -98,7 +99,7 @@ public abstract class BaseActivity extends ARViewActivity {
 	}
 	
 	public String[] getNavigationList(){
-		String[] titles = {"Home","Location","Sensor Activity","Graphics","WiFi Direct","Sliding Pane","Animation","Camera","Maps"};
+		String[] titles = {};
 		return titles;
 	}
 	

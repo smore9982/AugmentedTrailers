@@ -28,7 +28,7 @@ public class SplashScreenActivity extends Activity {
 	};
 	
 	private void loadNextScreen(){
-		Intent nextScreen = new Intent(this,AugmentTrailer.class);
+		Intent nextScreen = new Intent(this,MainActivity.class);
 		this.startActivity(nextScreen);
 		this.finish();
 	}
@@ -110,7 +110,7 @@ public class SplashScreenActivity extends Activity {
 			
 			if (result)
 			{
-				Toast.makeText(SplashScreenActivity.this, "Metaio Assets Loaded", Toast.LENGTH_SHORT);
+				Toast.makeText(SplashScreenActivity.this, "Metaio Assets Loaded", Toast.LENGTH_SHORT).show();
 				_handler = new Handler();
 				_handler.postDelayed(delayRunnable, 10);
 			}

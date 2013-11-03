@@ -33,10 +33,18 @@
             	<category android:name="android.intent.category.LAUNCHER" />
        		</intent-filter>
   		</activity>
+		<activity
+            android:name="com.android.augmentedtrailer.activity.AugmentWearable"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+        />
   		<activity
             android:name="com.android.augmentedtrailer.activity.AugmentTrailer"
-            android:label="@string/activity_label_augment"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        />
+  		<activity
+            android:name="com.android.augmentedtrailer.activity.MainActivity"
+            android:label="@string/activity_label_augment"
         />
   	</application>
 

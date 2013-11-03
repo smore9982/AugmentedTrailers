@@ -80,15 +80,15 @@ public class AugmentTrailer extends ARViewActivity{
 	protected void loadContents() {
 		// Load desired tracking data for planar marker tracking
 		try{
-			final String trackingConfigFile = AssetsManager.getAssetPath("TrackingData_MarkerlessFast.xml");
+			final String trackingConfigFile = AssetsManager.getAssetPath("TrailerAssets/TrackingData_MarkerlessFast.xml");
 			
 			final boolean result = metaioSDK.setTrackingConfiguration(trackingConfigFile); 
 			MetaioDebug.log("Tracking data loaded: " + result); 
 	      		
 			// Loading movie geometry
-			final String haloMoviePath = AssetsManager.getAssetPath("HaloAssets/HaloVideo.3g2");
-			final String forzaMoviePath = AssetsManager.getAssetPath("ForzaAssets/ForzaVideo.3g2");
-			final String massEffectMoviePath = AssetsManager.getAssetPath("MassEffectAssets/MassEffectVideo.3g2");
+			final String haloMoviePath = AssetsManager.getAssetPath("TrailerAssets/HaloAssets/HaloVideo.3g2");
+			final String forzaMoviePath = AssetsManager.getAssetPath("TrailerAssets/ForzaAssets/ForzaVideo.3g2");
+			final String massEffectMoviePath = AssetsManager.getAssetPath("TrailerAssets/MassEffectAssets/MassEffectVideo.3g2");
 			
 			if (haloMoviePath != null)
 			{
