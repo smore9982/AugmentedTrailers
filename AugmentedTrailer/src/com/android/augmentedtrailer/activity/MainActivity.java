@@ -11,6 +11,7 @@ import android.widget.Button;
 public class MainActivity extends BaseActivity {
 	Button augmentedTrailers;
 	Button augmentedWearables;
+	Button augmentedLocation;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class MainActivity extends BaseActivity {
 		
 		augmentedTrailers = (Button) this.findViewById(R.id.augmentedTrailer);
 		augmentedWearables = (Button) this.findViewById(R.id.augmentedWearables);
+		augmentedLocation = (Button) this.findViewById(R.id.augmentedLocation);
 	}
 		
 	@Override
@@ -39,6 +41,14 @@ public class MainActivity extends BaseActivity {
 	    		   Intent i = new Intent(MainActivity.this,AugmentWearable.class);
 	    		   startActivity(i);
 	    	   }
+	       });
+	       
+	       augmentedLocation.setOnClickListener(new OnClickListener(){
+	    	  @Override
+	    	  public void onClick(View v){
+	    		  Intent i = new Intent(MainActivity.this,AugmentLocation.class);
+	    		  startActivity(i);
+	    	  }
 	       });
 	}
 		

@@ -18,6 +18,9 @@
     <!-- These permissions are only needed for debugging -->
     <uses-permission android:name="android.permission.SET_DEBUG_APP" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!--  Use fine location permission -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -35,6 +38,11 @@
   		</activity>
 		<activity
             android:name="com.android.augmentedtrailer.activity.AugmentWearable"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+        />
+		<activity
+            android:name="com.android.augmentedtrailer.activity.AugmentLocation"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:screenOrientation="portrait"
         />
